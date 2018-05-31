@@ -23,7 +23,6 @@ import org.springframework.test.web.servlet.MvcResult;
 
 @WebAppConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
-@AutoConfigureRestDocs(outputDir = "build/asciidoc/snippets")
 @SpringBootTest(classes = Application.class)
 @AutoConfigureMockMvc
 public class Swagger2MarkupTest {
@@ -31,9 +30,7 @@ public class Swagger2MarkupTest {
     @Autowired
     private MockMvc mockMvc;
 
-    private String snippetDir = "target/generated-snippets";
     private String outputDir = "target/swagger2";
-    private String indexDoc = "target/asciidoc";
 
     @Test
     public void createSpringfoxSwaggerJson() throws Exception {
