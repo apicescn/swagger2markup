@@ -98,6 +98,8 @@
                             <tasks>
                                 <copy file="src/docs/asciidoc/index.adoc"
                                   tofile="target/asciidoc/index.adoc"/>
+                                <copy file="src/docs/swagger2/default-swagger2.json"
+                                  tofile="target/swagger2/swagger.json"/>
                             </tasks>
                         </configuration>
                     </execution>
